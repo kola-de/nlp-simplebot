@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Smith's Resume</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    .resume {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Header Styles */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #3498db;
+    }
+    .header p {
+      font-size: 1.2em;
+      color: #777;
+      margin: 10px 0 0;
+    }
+    /* Section Styles */
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #3498db;
+    }
+    .contact-info p,
+    .skills p {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    /* Timeline Styles - Adjusted to prevent text overlap */
+    .timeline {
+      position: relative;
+      padding-left: 50px;
+      margin-left: 10px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #ddd;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 20px; /* Add spacing to separate text from circles */
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 5px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #3498db;
+    }
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.3em;
+      color: #333;
+    }
+    .timeline-item span {
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .timeline-item p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Alex Smith</h1>
+      <p>Software Engineer | Full Stack Developer</p>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="section">
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:alex.smith@example.com">alex.smith@example.com</a></p>
+        <p>Phone: (555) 987-6543</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/alexsmith" target="_blank">linkedin.com/in/alexsmith</a></p>
+        <p>GitHub: <a href="https://github.com/alexsmith" target="_blank">github.com/alexsmith</a></p>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Senior Software Engineer</h3>
+          <span>TechCorp Inc. | 2020 - Present</span>
+          <p>Leading a team of developers to build scalable web applications and microservices, focusing on performance and reliability.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Developer</h3>
+          <span>Innovate Solutions | 2017 - 2020</span>
+          <p>Developed web applications using modern JavaScript frameworks, collaborating with designers and project managers to deliver quality products.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Junior Developer</h3>
+          <span>Startup Hub | 2015 - 2017</span>
+          <p>Worked on various client projects, gaining hands-on experience in full-stack development and agile methodologies.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <span>University of Innovation | 2011 - 2015</span>
+          <p>Graduated with honors, specializing in software development and algorithms.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <p>JavaScript, Python, Java, HTML5, CSS3, React, Node.js, SQL, Agile Methodologies</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

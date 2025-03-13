@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Johnson's Resume</title>
+  <!-- Google Fonts for stylish typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://source.unsplash.com/1600x900/?abstract') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    /* Overlay for readability */
+    .overlay {
+      background: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    /* Container using CSS Grid for two-column layout */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    /* Left Sidebar Styles */
+    .left {
+      background: #3498db;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    .left img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+    .left h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .left p {
+      margin: 10px 0 20px;
+      font-size: 1em;
+      opacity: 0.9;
+    }
+    .left .contact,
+    .left .social {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9em;
+    }
+    .left .contact li,
+    .left .social li {
+      margin-bottom: 10px;
+    }
+    .left .social li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .left h2 {
+      margin: 30px 0 10px;
+      font-size: 1.2em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 5px;
+    }
+    .left .skills {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .left .skills li {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.8em;
+    }
+    /* Right Content Styles */
+    .right {
+      padding: 40px;
+    }
+    .right h2 {
+      color: #3498db;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h3 {
+      margin: 0;
+      color: #3498db;
+      font-size: 1.1em;
+    }
+    .section span {
+      font-size: 0.9em;
+      color: #777;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .section p {
+      font-size: 0.95em;
+      line-height: 1.5;
+      margin: 0;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .left, .right {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <!-- Left Sidebar -->
+      <div class="left">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <h1>Alex Johnson</h1>
+        <p>Creative Web Developer</p>
+        <ul class="contact">
+          <li>Email: <a href="mailto:alex.johnson@example.com" style="color:#fff;">alex.johnson@example.com</a></li>
+          <li>Phone: (123) 456-7890</li>
+        </ul>
+        <h2>Social</h2>
+        <ul class="social">
+          <li><a href="https://linkedin.com/in/alexjohnson" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/alexjohnson" target="_blank">GitHub</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Photoshop</li>
+        </ul>
+      </div>
+      <!-- Right Content -->
+      <div class="right">
+        <div class="section">
+          <h2>About Me</h2>
+          <p>
+            I am a creative and dedicated web developer with over 5 years of experience in designing, developing, and managing websites and web applications. My passion for clean design and innovative solutions drives me to deliver high-quality projects.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Experience</h2>
+          <div class="experience">
+            <h3>Senior Developer at Creative Agency</h3>
+            <span>2019 - Present</span>
+            <p>
+              Leading a dynamic team in the creation of interactive and user-friendly web applications. Focused on responsive design, performance optimization, and cross-browser compatibility.
+            </p>
+          </div>
+          <br>
+          <div class="experience">
+            <h3>Web Developer at Tech Solutions</h3>
+            <span>2016 - 2019</span>
+            <p>
+              Developed a variety of web applications, implemented dynamic user interfaces, and collaborated with designers and content creators to enhance user experience.
+            </p>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Education</h2>
+          <div class="education">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <span>University of Tech | 2012 - 2016</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

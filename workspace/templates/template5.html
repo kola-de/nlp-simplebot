@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe | Resume</title>
+  <style>
+    /* CSS Variables for easy theming */
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #e74c3c;
+      --light-color: #ecf0f1;
+      --background-color: #ffffff;
+      --text-color: #34495e;
+    }
+
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: var(--background-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid var(--primary-color);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: var(--primary-color);
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+      color: var(--accent-color);
+    }
+    /* Grid Layout for Main Content */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 768px) {
+      .content {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+    /* Sidebar Styles */
+    .sidebar {
+      background: var(--primary-color);
+      color: var(--background-color);
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+    .sidebar a {
+      color: var(--background-color);
+      text-decoration: none;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      background: var(--accent-color);
+      color: var(--background-color);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 5px 0;
+      font-size: 0.9em;
+    }
+    /* Main Section Styles */
+    .main {
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+    .section h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: var(--primary-color);
+    }
+    .section span {
+      display: block;
+      font-size: 0.9em;
+      color: var(--accent-color);
+      margin-bottom: 5px;
+    }
+    .section p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>John Doe</h1>
+      <p>Full Stack Developer</p>
+    </header>
+
+    <!-- Main Content Grid -->
+    <div class="content">
+      <!-- Sidebar Section -->
+      <aside class="sidebar">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></li>
+          <li>Phone: (555) 123-4567</li>
+          <li>Location: 123 Main St, City, Country</li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="skills">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </aside>
+      
+      <!-- Main Resume Content -->
+      <main class="main">
+        <!-- Professional Summary -->
+        <section class="section">
+          <h2>Professional Summary</h2>
+          <p>
+            Passionate full stack developer with over 7 years of experience designing and implementing web applications. Skilled in both front-end and back-end technologies, with a keen eye for modern design and usability.
+          </p>
+        </section>
+        
+        <!-- Experience -->
+        <section class="section">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <h3>Senior Developer</h3>
+            <span>Tech Solutions Inc. | 2018 - Present</span>
+            <p>
+              Leading a team of developers in creating robust web applications. Responsible for project architecture, feature development, and integration of third-party services.
+            </p>
+          </div>
+          <br>
+          <div class="experience-item">
+            <h3>Web Developer</h3>
+            <span>Creative Agency | 2015 - 2018</span>
+            <p>
+              Developed responsive and user-friendly web applications. Collaborated with designers and marketing teams to deliver innovative solutions for clients.
+            </p>
+          </div>
+        </section>
+        
+        <!-- Education -->
+        <section class="section">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <span>State University | 2011 - 2015</span>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe's Resume</title>
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #e9ecef;
+      color: #333;
+    }
+    .resume-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+    }
+    /* Left Column Styles */
+    .left-column {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+      width: 35%;
+    }
+    .left-column .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    .left-column h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .contact-info, .skills {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+    .contact-info li,
+    .skills li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .skills li {
+      background-color: #495057;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .left-column h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #495057;
+      padding-bottom: 5px;
+    }
+    /* Right Column Styles */
+    .right-column {
+      padding: 20px;
+      width: 65%;
+    }
+    .right-column h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 5px;
+      color: #343a40;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .experience-item, .education-item {
+      margin-bottom: 15px;
+    }
+    .experience-item h3, .education-item h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .experience-item span, .education-item span {
+      font-size: 14px;
+      color: #6c757d;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .experience-item p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .resume-container {
+        flex-direction: column;
+      }
+      .left-column, .right-column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Left Column -->
+    <div class="left-column">
+      <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-pic" />
+      <h1>Jane Doe</h1>
+      <h2>Contact</h2>
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:jane.doe@example.com" style="color: #ffc107;">jane.doe@example.com</a></li>
+        <li>Phone: (123) 456-7890</li>
+        <li>Address: 123 Main St, City, Country</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/janedoe" target="_blank" style="color: #ffc107;">linkedin.com/in/janedoe</a></li>
+      </ul>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+    <!-- Right Column -->
+    <div class="right-column">
+      <div class="section">
+        <h2>Professional Summary</h2>
+        <p>
+          Experienced web developer with a strong background in front-end technologies and a passion for creating responsive, user-friendly applications. Adept at collaborating with cross-functional teams to deliver projects on time and exceed expectations.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Experience</h2>
+        <div class="experience">
+          <div class="experience-item">
+            <h3>Senior Web Developer</h3>
+            <span>ABC Company | 2021 - Present</span>
+            <p>
+              Lead a team of developers in building scalable web applications. Enhanced user experience through modern design and development practices.
+            </p>
+          </div>
+          <div class="experience-item">
+            <h3>Front-End Developer</h3>
+            <span>XYZ Agency | 2018 - 2021</span>
+            <p>
+              Developed responsive web pages using HTML, CSS, and JavaScript. Worked closely with designers to translate mockups into functional interfaces.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+        <div class="education">
+          <div class="education-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <span>University of Technology | 2014 - 2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
